@@ -2,11 +2,12 @@ $(document).ready(function(){
 // jQuery inicio
 	$.ajax({
 		   type: "GET",
-		   dataType: "jsonp",
-		   url: "https://agencia.attask-ondemand.com/attask/api/task?ID=5047ef2a0003bcacb6f6d79674fa937a/get",
+		   dataType: "json",
+//		   url: "https://agencia.attask-ondemand.com/attask/api/project/4f0316d600144b5c5d6e9af10d3f8859?method=get",
+		   url: "http://localhost/_Labs/web/mapadealocacao/src/json.php",
 		   success: function(data){
 			   console.log(data);
-		     //$('.content').html(data);
+//			   $('.content').html(data);
 		   }
 		});
 // jQuery final
